@@ -22,8 +22,9 @@ const sendData = () => {
         }
     )
         .then(response => {
-            console.log(response.data);
             console.log(response.status);
+            console.log(response.data);
+            console.log(response.data.message[0]);
         })
         .catch(err => {
             console.log(err, err.response);
